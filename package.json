@@ -1,0 +1,20 @@
+{
+  "name": "@smt/shared-realestate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Motores de mercado/normativa reales (SHF, SNIIV, GeoServer San Pedro) y utilidades de LLM compartidas entre smt-developer y smtbroker. Se consume desde el código fuente TypeScript directo (sin paso de build propio) -- cada app lo compila con su propio Next/tsc, mismo criterio que usan ambos repos para todo lo demás.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@anthropic-ai/sdk": "^0.96.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.96.0",
+    "@types/node": "^20",
+    "typescript": "^5",
+    "vitest": "^4.1.9"
+  }
+}
